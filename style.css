@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    background-color: transparent;
+    border: 0px;
+}
+#input_info{
+   
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    z-index: 200;
+}
+#dist1{
+    width: 30px;
+    position: absolute;
+    top: 353px;
+    left: 208px;
+}
+#dist2{
+    width: 30px;
+    position: absolute;
+    top: 353px;
+    left: 310px;
+}
+#carga1{
+    width: 30px;
+    position: absolute;
+    top: 230px;
+    left: 140px;
+}
+#carga2{
+    width: 30px;
+    position: absolute;
+    top: 230px;
+    left: 250px;
+}
+#carga3{
+    width: 30px;
+    position: absolute;
+    top: 230px;
+    left: 355px;
+}
+#Resultante{
+    width: 30px;
+    position: absolute;
+    top: 200px;
+    left: calc((160px + (25px *5.75)))
+}
+#Posicion_Rsultante{
+    width: 33px;
+    position: absolute;
+    top: 325px;
+    left: 211px;
+}
+#Posicion_EjeLuz{
+    width: 33px;
+    position: absolute;
+    top: 333px;
+    left: 257px;
+}
+#btn_Inicio{
+    position: absolute;
+    top: 500px;
+    left: 350px;;
+}
+#btn_Calcular{
+    position: absolute;
+    top: 500px;
+    left: 430px;;
+}
+#btn_upgrade{
+    position: absolute;
+    top: 530px;
+    left: 430px;;
+}
+
+#longitud_puente{
+    width: 30px;
+    position: absolute;
+    top: 410px;
+    left: 291px;;
+}
+#btn_Calcular2{
+    position: absolute;
+    top: 560px;
+    left: 430px;;
+}

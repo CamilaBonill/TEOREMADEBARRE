@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TEOREMA DE BARRE</title>
+</head>
+<body>
+ <canvas width="1200" height="1200" style="border: solid;"></canvas>
+ <div id="input_info">
+    <input type="text" id="dist1" value="4.3">
+    <input type="text" id="dist2" value="4.3">
+    <input type="text" id="carga1" value="3.6">
+    <input type="text" id="carga2" value="14.8">
+    <input type="text" id="carga3" value="14.8">
+    <input type="text" id="Resultante"> 
+    <input type="text" id="Posicion_Rsultante">
+    <input type="text" id="Posicion_EjeLuz"> 
+    
+    <button onclick="posicionEjeCamion()" id="btn_Calcular">Calcular</button>
+    <button onclick="upgrade()" id="btn_upgrade">upgrade</button>
+    <!----------------------------Viga Del Puente------------------->
+    <input type="text" id="longitud_puente" value="14">
+    <button onclick="ubicarcamion()" id="btn_Calcular2">ubicarcamion</button>
+     
+ </div> 
+
+ <script src="./cuadricula.js"></script>
+ <script src="./canvas.js"></script>
+ <script src="./main.js"></script>
+
+</body>
+
+</html>
