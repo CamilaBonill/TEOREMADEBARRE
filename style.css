@@ -89,3 +89,11 @@ input{
     top: 560px;
     left: 430px;;
 }
+#resultado{
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 408px;
+    left: 600px;
+}

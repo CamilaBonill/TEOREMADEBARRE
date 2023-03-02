@@ -7,9 +7,9 @@ var color = "#82C2E5"
 
 /*------------------------inicio---------------------------*/
 
-const  dist1 = parseFloat(document.getElementById('dist1').value);
-const  dist2 = parseFloat(document.getElementById('dist2').value);
-dibujarcarga(dist1, dist2)
+//const  dist1 = parseFloat(document.getElementById('dist1').value);
+//const  dist2 = parseFloat(document.getElementById('dist2').value);
+//dibujarcarga(dist1, dist2)
 
 /*------------------------Calculos de la posicion de la resultante y Eje En el Camion---------------------------*/
 
@@ -37,8 +37,17 @@ function posicionEjeCamion(){
     
     document.getElementById("Posicion_EjeLuz").value = PE;
     dibujarcarga(dist1, dist2)
-    dibujarclaroluz(PE, PR, dist1, dist2)
+    dibujarclaroluz(PE, PR, dist2)
     
+}
+
+// resultado
+function resultado(Carga1, Carga2, Carga3, LP){
+    let x1 = (LP/2) - (PE + dist1)
+
+    //Ray
+    let Ray = ((Carga1*(LP - x1)))/LP
+    console,log(Ray)
 }
 
 /*------------------------Dibujo---------------------------*/
@@ -47,14 +56,18 @@ eje(100, 300, 400, 0, 4, "#000000")
 cuadricula()
 
 function dibujarcarga(dist1, dist2) {
+
     //rueda
+    // Carga de medio fija en 267.5
+    let PC2 = 267.5
     carga(160, 250, 0, "red")
     // distancia ente rueda 4.3 m, 25 es igual a metro
-    carga((160+(25*dist1)), 250, 0, "red")
-    carga((160+(25*(dist1 + dist2))), 250, 0, "red")
+    carga((PC2), 250, 0, "red")
+    carga((PC2+(25*(dist2))), 250, 0, "red")
 
     // distancia entre rueda
-    eje(160, 350, (25*(dist1 + dist2)), 0, 2, "#ae9c8f")
+    eje(160, 350, (25*(dist1)), 0, 2, "#ae9c8f")
+    eje(PC2, 350, (25*(dist2)), 0, 2, "#ae9c8f")
     eje(160, 345, 0, 10, 2, "#ae9c8f")
     eje((160 + (25*dist1)), 345, 0, 10, 2, "#ae9c8f")
     eje((160 + (25*(dist1 + dist2))), 345, 0, 10, 2, "#ae9c8f")
@@ -62,7 +75,7 @@ function dibujarcarga(dist1, dist2) {
 }
 
 
-function dibujarclaroluz(PE, PR, dist1){
+function dibujarclaroluz(PE, PR, dist2){
     //resultante
     // Carga de medio fija en 567.5
     let PC2 = 267.5
@@ -93,6 +106,7 @@ function ubicarcamion(){
     triangulo2(IF, 290, "#52fd00")
     eje(CL, 225, 0, 150, 5, "#55ffe2")
     console.log(LP)
+    
 }
 
 
