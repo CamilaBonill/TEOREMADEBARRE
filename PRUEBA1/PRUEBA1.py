@@ -42,6 +42,6 @@ p_2.font.size = Pt(12)
 
 # Guardar la presentación
 nombre_presentacion = 'presentacion_dispositivo.pptx'
-prs.save(nombre_presentacion)
+prs.save('c://Users//Janelka Bonilla//Documents//Github//TEOREMADEBARRE//presentacion_dispositivo.pptx')
 
 print(f"Presentación '{nombre_presentacion}' creada exitosamente con las imágenes y texto.")
